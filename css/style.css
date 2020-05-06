@@ -1,5 +1,20 @@
 body{
-background-color: aquamarine;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: aquamarine;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: -.2px;
+    
 }
 /* selector de clase inicia con un punto*/
 .link{
