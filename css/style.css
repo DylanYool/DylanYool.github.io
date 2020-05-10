@@ -1,5 +1,5 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     background-color: #4d5056;
     margin: 0px;
     padding: 0px;
@@ -9,13 +9,8 @@ header {
     background-color: #080a11;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Fjalla One', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fjalla One", sans-serif;
     font-weight: normal;
     font-style: italic;
 }
@@ -23,13 +18,35 @@ h6 {
 h1 {
     font-size: 36px;
     line-height: 150%;
-    letter-spacing: -.2px;
+    letter-spacing: -0.2px;
 }
 
 h1 strong {
     color: #5cde87;
 }
 
+section {
+    display: flex;
+    border-color: aquamarine;
+    border-width: 3px;
+    border-radius: 8px;
+    border-style: ridge;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: content-box;
+}
+
+article {
+    width: 50%;
+    display: block;
+    align-self: flex-start;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 /* selector de clase inicia con un punto*/
 
@@ -40,16 +57,10 @@ h1 strong {
 .hero {
     height: 400px;
     background-color: #4b4e55;
-    background-image: url('https://c.wallhere.com/photos/47/01/Houseki_no_kuni_Phos_Houseki_no_Kuni_gold-1224133.jpg!d');
+    background-image: url("https://c.wallhere.com/photos/47/01/Houseki_no_kuni_Phos_Houseki_no_Kuni_gold-1224133.jpg!d");
     background-size: 700px 400px;
     background-repeat: no-repeat;
     background-position-x: right;
-    border-color: aquamarine;
-    border-width: 3px;
-    border-radius: 8px;
-    border-style: ridge;
-    margin: 10px;
-    padding: 15px
 }
 
 .link {
@@ -57,7 +68,17 @@ h1 strong {
     text-decoration: none;
 }
 
+/* .experience {
+  /* justify-content: space-around; 
+} */
 
+.experience-imageContainer {
+    flex-wrap: wrap;
+}
+
+/* .poject {
+}
 /* Selector de Id inicia con # sharp*/
 
-#portafolio {}
+/* #portafolio {
+} */
