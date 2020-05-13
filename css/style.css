@@ -3,10 +3,37 @@ body {
     background-color: #4d5056;
     margin: 0px;
     padding: 0px;
+    color: whitesmoke;
 }
 
-header {
+.header {
     background-color: #080a11;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    /* margin: 10px; */
+    padding: 15px;
+    height: 70px;
+}
+
+.header ol, ul {
+    display: flex;
+    height: inherit;
+}
+
+.header li {
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,20 +53,22 @@ h1 strong {
 }
 
 section {
-    display: flex;
+    /* display: flex; */
+    box-sizing: content-box;
+    margin:10px 25px 0 25px;
+}
+
+article {
+    width: 50%;
     border-color: aquamarine;
     border-width: 3px;
     border-radius: 8px;
     border-style: ridge;
     margin: 10px;
     padding: 15px;
-    box-sizing: content-box;
-}
-
-article {
-    width: 50%;
-    display: block;
+    display: flex;
     align-self: flex-start;
+    justify-content: space-between;
 }
 
 ol, ul {
@@ -61,6 +90,8 @@ ol, ul {
     background-size: 700px 400px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 
 .link {
@@ -69,11 +100,29 @@ ol, ul {
 }
 
 /* .experience {
-  /* justify-content: space-around; 
+  /* justify-content: space-around;
 } */
 
 .experience-imageContainer {
     flex-wrap: wrap;
+}
+
+.portfolio-title {
+    margin: 20px;
+}
+
+.footer {
+    background-color: #080a11;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footer a {
+    color: cadetblue;
+    text-decoration: none;
 }
 
 /* .poject {
