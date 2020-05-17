@@ -1,9 +1,11 @@
 body {
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #4d5056;
+    background-color: #F0FFFF;
     margin: 0px;
     padding: 0px;
-    color: whitesmoke;
+    color: #120c08;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -43,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 150%;
     letter-spacing: -0.2px;
 }
@@ -52,23 +54,33 @@ h1 strong {
     color: #5cde87;
 }
 
+h3 strong {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+}
+
 section {
-    /* display: flex; */
+    display: flex;
     box-sizing: content-box;
-    margin:10px 25px 0 25px;
+    margin: 10px 25px 0 25px;
+}
+
+.section-title {
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+    margin: 20px;
 }
 
 article {
     width: 50%;
     border-color: aquamarine;
-    border-width: 3px;
+    border-width: 1px;
     border-radius: 8px;
     border-style: ridge;
     margin: 10px;
-    padding: 15px;
-    display: flex;
-    align-self: flex-start;
-    justify-content: space-between;
+    background-color: whitesmoke;
 }
 
 ol, ul {
@@ -86,12 +98,14 @@ ol, ul {
 .hero {
     height: 400px;
     background-color: #4b4e55;
-    background-image: url("https://c.wallhere.com/photos/47/01/Houseki_no_kuni_Phos_Houseki_no_Kuni_gold-1224133.jpg!d");
-    background-size: 700px 400px;
+    background-image: url("https://pbs.twimg.com/profile_images/1252053996648398849/8odKipBj_400x400.jpg");
+    background-size: 400px 400px;
     background-repeat: no-repeat;
     background-position-x: right;
     display: flex;
     align-items: center;
+    padding: 0 15px 0 15px;
+    border: #080a11 solid;
 }
 
 .link {
@@ -99,16 +113,60 @@ ol, ul {
     text-decoration: none;
 }
 
+#F0FFFF
 /* .experience {
   /* justify-content: space-around;
 } */
 
-.experience-imageContainer {
-    flex-wrap: wrap;
+.experience {
+    display: flex;
+    
+    /* overflow: hidden; */
+    flex-shrink: 0;
 }
 
-.portfolio-title {
-    margin: 20px;
+.experience-article {
+    width: 480px;
+}
+
+.experience-detail {
+    margin: 20px 40px;
+    padding: 3px 17px;
+    background-color: #F0FFFF;
+    margin-top: -60px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.experience-description {
+    text-align: left;
+}
+
+.experience-title, .experience-date {
+    margin: 0 5px;
+    display: inline;
+}
+
+.experience-imageContainer {
+    margin: 0;
+}
+
+.experience-image {
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.portfolio {
+    margin: 15px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+.project-details {
+    padding: 10px;
 }
 
 .footer {
@@ -118,6 +176,7 @@ ol, ul {
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
+    margin-top: 0;
 }
 
 .footer a {
@@ -125,6 +184,72 @@ ol, ul {
     text-decoration: none;
 }
 
+.contact {
+    background-color: cadetblue;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 40px;
+    margin-bottom: 0;
+}
+
+.social-link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+
+.social-link.twitter {
+    background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/09/Twitter-6.0-for-iOS-app-icon-small.png");
+    background-size: 60px 60px;
+    object-fit: cover;
+}
+
+.social-link.github {
+    background-image: url("https://image.freepik.com/free-icon/github-cat-in-a-circle_318-41747.jpg");
+    background-size: 60px 60px;
+    object-fit: cover;
+}
+
+.social-link.hackerEarth {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/HackerEarth_logo.png/220px-HackerEarth_logo.png");
+    background-size: 60px 60px;
+    object-fit: cover;
+    color:#0000FF
+}
+.form-email input{
+    border: #4b4e55 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    padding:2px 20px 2px 28px;
+    background-image: url("http://www.bolandschool.com/wp-content/uploads/2016/10/icon-mail.png");
+    background-size: 20px 20px;
+    background-position-y: center;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+    margin-top: 7px;
+}
+
+.form-email button {
+    display: block;
+    padding: 8px 4px;
+    width: 100px;
+    background: transparent;
+    border: white 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form-email h3{
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+    margin: 7px;
+}
 /* .poject {
 }
 /* Selector de Id inicia con # sharp*/

@@ -1,0 +1,29 @@
+@media (max-width:800px){
+    section{
+        display: inherit;
+        flex-direction: inherit;
+        height: auto;
+        box-sizing: unset;
+        flex-wrap: wrap;
+    }
+    .hero{
+        display: inherit;
+        flex-direction: inherit;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .footer{
+        display: inherit;
+        flex-direction: inherit;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .experience-article{
+        width: auto;
+    }
+    .experience-image {
+        width:fit-content;
+        height: 300px;
+        object-fit: cover;
+    }
+}

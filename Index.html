@@ -6,14 +6,16 @@
         <title>Dylan Yool</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=
-                                                                                                                                                                                                                Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;1,200;1,600;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;1,200;1,600;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/mobile.css" rel="stylesheet">
     </head>
 
     <body>
+        
         <header class="header">
-
             <figure class="logo">
                 <img src="" alt="">
             </figure>
@@ -22,11 +24,11 @@
                     <li><a class="link" href="">Acerca de Mi</a></li>
                     <li><a class="link" href="#experiencia">Experiencias</a></li>
                     <li><a class="link" href="#portafolio">Portafolio</a></li>
-                    <li><a class="link" href="#contacto" target="_blank">Contactame</a></li>
+                    <li><a class="link" href="#contacto">Contactame</a></li>
                 </ul>
             </nav>
-
         </header>
+
         <section class="hero">
             <div class="hero-Description">
                 <h1>
@@ -44,29 +46,36 @@
                 </h1>
             </div>
         </section>
-
+        <h2 class="section-title">Sobre mi experiencia</h2>
         <section id="experiencia" class="experience">
-            <h2>Sobre mi experiencia</h2>
-            <article class="project">
 
-                <h3 class="experience-title">Guatex</h3>
-                <p class="experience-date">
-                    <small>
-                        <strong>Fecha inicio:</strong>12/03/2020</small>
-                </p>
-                <p class="experience-date">
-                    <small>
-                        <strong>Fecha fin:</strong>actualidad</small>
-                </p>
-                <p class="experience-description">Forme parte del equipo encargado de la migración de su sistema al lenguaje Java y su base de datos a Oracle
-                </p>
+            <article class="experience-article">
                 <figure class="experience-imageContainer">
-                    <img src="" alt="">
+                    <img class="experience-image" src="http://guatex.com/guatex/wp-content/themes/guatex/img/home/guatex_vision.jpg" alt="http://guatex.com/guatex/wp-content/themes/guatex/img/home/guatex_vision.jpg">
                 </figure>
+                <div class="experience-detail">
+                    <h3 class="experience-title">
+                        <strong>Guatex
+                        </strong>
+                    </h3>
+                    <p class="experience-date">
+                        <small>
+                            <strong>Desde:</strong>12/03/2020</small>
+                    </p>
+                    <p class="experience-date">
+                        <small>
+                            <strong>Hasta:</strong>actualidad</small>
+                    </p>
+                    <p class="experience-description">Formo parte del equipo encargado de migrar el sistema a lenguaje "Java" y su base de datos a Oracle.
+                    </p>
+                </div>
+            </article>
+            <article class="experience-article">
+
             </article>
         </section>
+        <h2 class="section-title">Portafolio (Proyectos Destacados)</h2>
         <section id="portafolio" class="portfolio">
-            <h2 class="portfolio-title">Portafolio (Proyectos Destacados)</h2>
             <article class="project">
                 <div class="project-details">
                     <h3 class="project-title">Titulo</h3>
@@ -88,12 +97,14 @@
         <section id="contacto" class="contact">
             <form action="" class="form-email">
                 <h3>¿Qué tienes en mente?</h3>
-                <input type="checkbox" value="Propuesta de empleo">
-                <input type="checkbox" value="Mentorias">
-                <input type="checkbox" value="Trabajemos juntos">
                 <input type="email" placeholder="Déjame tu email">
                 <button>Enviar</button>
             </form>
+            <div class="social">
+                <a href="https://twitter.com/DylanYool" target="_blank" class="social-link twitter"></a>
+                <a href="https://github.com/DylanYool" target="_blank" class="social-link github"></a>
+                <a href="https://www.hackerearth.com/@dyron17" target="_blank" class="social-link hackerEarth"></a>
+            </div>
         </section>
         <section></section>
         <section></section>
@@ -103,5 +114,12 @@
             </div>
             <div>
                 <p>
-                    Designed with
-                    <\3 <a href=""> by @dyron17</a> </p> </div> </footer> </body> </html>
+                    Designed
+                    <a href="https://twitter.com/DylanYool"  target="_blank" >
+                        by @dylanyool
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
