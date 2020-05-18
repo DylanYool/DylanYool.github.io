@@ -1,6 +1,7 @@
 body {
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #F0FFFF;
+    /* background-color: #4e9dc4; */
+    background-color: #FBFAFF;
     margin: 0px;
     padding: 0px;
     color: #120c08;
@@ -9,8 +10,7 @@ body {
 }
 
 .header {
-    background-color: #080a11;
-    color: white;
+    background-color: #070D3D;
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -19,23 +19,33 @@ body {
     padding: 15px;
     height: 70px;
 }
-
-.header ol, ul {
+.menu{ 
+    color: black;
+    background-color: #b4dade;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+.menu ol, ul {
+    display: inherit;
     height: inherit;
 }
 
-.header li {
+.menu li {
     height: inherit;
+    display: inherit;
 }
 
-.header a {
-    color: white;
+.menu a {
+    color: black;
     text-decoration: none;
     height: inherit;
-    display: flex;
+    display:inherit;
     align-items: center;
-    padding: 0 10px;
+    padding: 5px 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,10 +85,11 @@ section {
 
 article {
     width: 50%;
-    border-color: aquamarine;
+    border-color: whitesmoke;
     border-width: 1px;
     border-radius: 8px;
     border-style: ridge;
+    border-radius: 10px;
     margin: 10px;
     background-color: whitesmoke;
 }
@@ -93,6 +104,9 @@ ol, ul {
 
 .hero-Description {
     color: whitesmoke;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
 }
 
 .hero {
@@ -161,6 +175,7 @@ ol, ul {
 .portfolio {
     margin: 15px;
     display: flex;
+    width: auto;
     align-self: flex-start;
     justify-content: space-between;
 }
@@ -170,8 +185,8 @@ ol, ul {
 }
 
 .footer {
-    background-color: #080a11;
-    color: whitesmoke;
+    background-color: #0A0E41;
+    color: #FBFAFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,12 +195,13 @@ ol, ul {
 }
 
 .footer a {
-    color: cadetblue;
+    color: #B4DADE;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .contact {
-    background-color: cadetblue;
+    background-color: #086195;
     color: white;
     height: 150px;
     display: flex;
@@ -241,7 +257,7 @@ ol, ul {
     background: transparent;
     border: white 1px solid;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .form-email h3{
@@ -250,9 +266,11 @@ ol, ul {
     letter-spacing: -0.2px;
     margin: 7px;
 }
+
 /* .poject {
 }
 /* Selector de Id inicia con # sharp*/
 
 /* #portafolio {
+Pass1728720Firefox!
 } */
