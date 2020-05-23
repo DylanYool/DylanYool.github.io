@@ -3,14 +3,11 @@
         display: inherit;
         flex-direction: inherit;
         height: auto;
-        box-sizing: unset;
         flex-wrap: wrap;
-        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+       
 
     }
     .menu{ 
-        color: black;
-        background-color: #b4dade;
         display: flex;
         margin: 0;
         position: sticky;
@@ -27,36 +24,39 @@
     }
     
     .menu a {
-        color: black;
         text-decoration: none;
         align-items: center;
         padding: 2px 5px;
     }
     .hero-Description {
         color: whitesmoke;
-        width: 100%;
+        /* width: 100%; */
         height: auto;
+        margin: 10px;
+        box-sizing: border-box;
     }
     .hero-Description  h1{
         color: whitesmoke;
-        width: 100%;
-        font-size: 200%;
-        height: auto;
+        width: inherit;
+        font-size: auto;
+        height: inherit;
+        margin: 10px;
+        box-sizing: border-box;
     }
     
     .hero {
-        height: 400px;
-        background-color: #4b4e55;
-        background-image: url("https://pbs.twimg.com/profile_images/1252053996648398849/8odKipBj_400x400.jpg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position-x: right;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        box-sizing: content-box;
-        padding: 0 15px 0 15px;
-        border: #080a11 solid;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+    .picture img{
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        max-height: 400px;
+        object-fit: cover;
     }
 
     .experience-article{

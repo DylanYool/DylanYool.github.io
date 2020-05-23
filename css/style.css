@@ -10,15 +10,21 @@ body {
 }
 
 .header {
-    background-color: #070D3D;
-    display: flex;
+    background-color: #141313;
     justify-content: space-between;
-    height: 90px;
+    height: 30px;
     align-items: center;
     /* margin: 10px; */
-    padding: 15px;
-    height: 70px;
+    /* padding: 15px; */
+    box-sizing: content-box;
+    /* clip-path: polygon(0 0,100% 30px,100% 100%,0 100%); */
 }
+.header img{
+    width: 90px;
+    margin: 0;
+    padding: 0; 
+    object-fit: cover;
+    justify-self: start;}
 .menu{ 
     color: black;
     background-color: #b4dade;
@@ -26,7 +32,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    position: sticky;
+    position:sticky;
     top: 0;
 }
 .menu ol, ul {
@@ -40,12 +46,14 @@ body {
 }
 
 .menu a {
-    color: black;
+    color: #141313;
     text-decoration: none;
     height: inherit;
     display:inherit;
     align-items: center;
     padding: 5px 15px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +69,7 @@ h1 {
 }
 
 h1 strong {
-    color: #5cde87;
+    color: #086195;
 }
 
 h3 strong {
@@ -74,6 +82,7 @@ section {
     display: flex;
     box-sizing: content-box;
     margin: 10px 25px 0 25px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
 .section-title {
@@ -102,26 +111,54 @@ ol, ul {
 
 /* selector de clase inicia con un punto*/
 
-.hero-Description {
-    color: whitesmoke;
-    width: 100%;
-    height: auto;
-    box-sizing: content-box;
-}
-
 .hero {
     height: 400px;
-    background-color: #4b4e55;
-    background-image: url("https://pbs.twimg.com/profile_images/1252053996648398849/8odKipBj_400x400.jpg");
-    background-size: 400px 400px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    background-color: #070D3D;
     display: flex;
+    padding: 0 0px 0 15px;
+    justify-content: space-between;
+    box-sizing: border-box;
     align-items: center;
-    padding: 0 15px 0 15px;
-    border: #080a11 solid;
+}
+.hero-Description {
+    color: whitesmoke;
+    display: flex;
+    width: auto;
+    height: 400px;
+    box-sizing: border-box;
+    margin:10px 20px;
+    align-items: center;
+
 }
 
+.hero-Description  h1{
+    display: inline-flexbox;
+    color: whitesmoke;
+    width: auto;
+    font-size: 4.5vmin;
+    height: 200px;
+    box-sizing: border-box;
+    margin:0;
+}
+
+.picture{
+margin: 10px 0;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+    /* justify-content:start; */
+    box-sizing: border-box;
+    object-fit: cover;
+    max-width: 600px;
+    max-height: 600px;
+}
+.hero-aboutMe{
+    display: inline-flexbox;
+    margin:10px;
+    align-items: flex-start;
+}
 .link {
     color: cadetblue;
     text-decoration: none;
