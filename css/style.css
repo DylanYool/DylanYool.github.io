@@ -2,6 +2,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     /* background-color: #4e9dc4; */
     background-color: #FBFAFF;
+    background-color: #b4dade;
     margin: 0px;
     padding: 0px;
     color: #120c08;
@@ -31,7 +32,7 @@ body {
 .menu {
     color: black;
     background-color: #b4dade;
-    background-color: #086195;
+    background-color: #070D3D;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -46,12 +47,11 @@ body {
     display: flex;
     display: inherit;
     height: inherit;
-    width:80%;
+    width: 80%;
     justify-content: space-evenly;
 }
 
 .menu li {
-    
     height: inherit;
     display: inherit;
 }
@@ -96,8 +96,7 @@ section {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-    background-color: #b4dade;
-
+    background-color: #086195;
     margin: 10px 25px 0 25px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -131,9 +130,9 @@ ol, ul {
 /* selector de clase inicia con un punto*/
 
 .hero {
-    height: 400px;
+    height: 100px;
     background-color: #b4dade;
-
+    background-color: #086195;
     display: flex;
     padding: 0 0px 0 15px;
     justify-content: space-between;
@@ -145,7 +144,7 @@ ol, ul {
     color: #131414;
     display: flex;
     width: auto;
-    height: 400px;
+    height: 100px;
     box-sizing: border-box;
     margin: 10px 20px;
     align-items: center;
@@ -173,6 +172,7 @@ ol, ul {
     object-fit: cover;
     max-width: 300px;
     max-height: 300px;
+    border: whitesmoke 2px solid;
     border-image: 1px;
     border-radius: 50%;
 }
@@ -328,29 +328,76 @@ ol, ul {
     margin: 7px;
 }
 
-.board{
+.board {
     display: grid;
     grid-template-columns: 25% 75%;
     justify-content: center;
     height: initial;
 }
-.me{
-    display:flex;
+
+.me {
+    display: flex;
     flex-shrink: 0;
     height: inherit;
 }
-.profile{
-    display: flex;
-    background-color: #070D3D;
 
-    grid-column: auto;
-    flex-direction: column;
-    height: inherit;
-    flex-shrink: 0;
+.profile {
+    display: block;
+    background-color: #086195;
+    height: auto;
+    padding: 3%;
     max-width: 400px;
 }
-.cards{
+
+.cards {
     display: flexbox;
+}
+
+.Skills {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Skills p,h3,h2{
+    margin: 2px;
+    text-align: center;
+    text-justify: auto;
+    color: white;
+    font-weight: bold;
+
+}
+
+.Meter {
+    display: block;
+    border: #141313 1px solid;
+    border-radius: 10px;
+    width: auto;
+    height: 20px;
+    background-color: #B4DADE;
+}
+
+.percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    border: #086195 1px solid;
+    border-radius: 10px;
+    height: 80%;
+   
+    color: whitesmoke;
+    background-color: #0A0E41;
+}
+.Java{
+    width: 70%;
+}
+.percent p {
+    margin: 1px;
+    text-align: center;
 }
 
 /* .poject {
