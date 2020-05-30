@@ -2,7 +2,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     /* background-color: #4e9dc4; */
     background-color: #FBFAFF;
-    background-color: #b4dade;
+    background-color: #e3eff3;
     margin: 0px;
     padding: 0px;
     color: #120c08;
@@ -97,6 +97,7 @@ section {
     box-sizing: border-box;
     flex-wrap: wrap;
     background-color: #086195;
+    background-color: #50a4ce;
     margin: 10px 25px 0 25px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -131,8 +132,6 @@ ol, ul {
 
 .hero {
     height: 100px;
-    background-color: #b4dade;
-    background-color: #086195;
     display: flex;
     padding: 0 0px 0 15px;
     justify-content: space-between;
@@ -198,6 +197,8 @@ ol, ul {
     width: 400px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
 }
 
 .experience-detail {
@@ -223,12 +224,15 @@ ol, ul {
 
 .experience-imageContainer {
     margin: 0;
+    overflow: hidden;
+
 }
 
 .experience-image {
     width: 400px;
     height: 300px;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .portfolio {
@@ -343,7 +347,7 @@ ol, ul {
 
 .profile {
     display: block;
-    background-color: #086195;
+    background-color: #50a4ce;
     height: auto;
     padding: 3%;
     max-width: 400px;
@@ -355,14 +359,17 @@ ol, ul {
 
 .Skills {
     width: auto;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    display: flexbox;
+    display: block;
+
+    /* display: flexbox;
+    display: -ms-flexbox; */
     flex-direction: column;
     text-align: center;
 }
 
-.Skills p,h3,h2{
+.Skills p,.Skills h3,.Skills h2{
     margin: 2px;
     text-align: center;
     text-justify: auto;
@@ -377,6 +384,7 @@ ol, ul {
     border-radius: 10px;
     width: auto;
     height: 20px;
+    margin-bottom: 10px;
     background-color: #B4DADE;
 }
 
@@ -388,17 +396,65 @@ ol, ul {
     border: #086195 1px solid;
     border-radius: 10px;
     height: 80%;
-   
     color: whitesmoke;
     background-color: #0A0E41;
 }
 .Java{
-    width: 70%;
+    width: 75%;
 }
+
+.Csharp{
+    width: 65%;
+}
+.Cpp{
+    width: 60%;
+}
+.SQL{
+    width: 60%;
+}
+
+.Web{
+    width: 60%;
+}
+
+.Git{
+    width:80%;
+}
+
 .percent p {
     margin: 1px;
     text-align: center;
 }
+
+.MyInfo{
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows:20% 40% 40%;
+    background-color: #B4DADE;
+    background-color: #e3eff3;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: -30px;
+    flex-direction: column;
+
+}
+
+.MyInfo p{
+    margin: 2px;
+}
+.english{
+    width: 60%;
+}
+.japanese{
+    width: 10%;
+}
+
+.fas, .fab{
+    margin: 1px 7px;
+}
+
+
 
 /* .poject {
 }
