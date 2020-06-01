@@ -9,7 +9,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+hr{
+    width: 95%;
+    margin: 3px;
+}
 .header {
     background-color: #141313;
     justify-content: space-between;
@@ -41,6 +44,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 80%, 85% 85%, 75% 100%, 25% 100%, 15% 85%, 0 80%);
 }
 
 .menu ol, ul {
@@ -74,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Fjalla One", sans-serif;
     font-weight: normal;
     font-style: italic;
+    margin:2px
 }
 
 h1 {
@@ -106,7 +111,7 @@ section {
     font-size: 28px;
     line-height: 1.25;
     letter-spacing: -0.2px;
-    margin: 20px;
+    margin: 5px;
 }
 
 article {
@@ -126,6 +131,10 @@ ol, ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+p{
+    margin: 2px;
 }
 
 /* selector de clase inicia con un punto*/
@@ -190,27 +199,48 @@ ol, ul {
 .experience {
     display: flex;
     justify-content: space-around;
-    flex-shrink: 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .experience-article {
-    width: 400px;
+    width: auto;
+    max-width: 295px;
+    min-width: 200px;
+    display: block;
+    text-align: center;
+    padding: 1%;
+    flex-shrink: 30%;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+}
+.experience-article ul{
     display: flex;
+    flex-wrap: wrap;
+    list-style:"|";
+    width: auto;
+    margin: 1px;
+    padding: 0;
+}
+.experience-card{
+    width: inherit;
+    box-sizing: border-box;
+    display:inline-flex;
     flex-direction: column;
+    object-fit: cover;
     overflow: hidden;
 
 }
 
 .experience-detail {
-    margin: 20px 40px;
-    padding: 3px 17px;
+    margin: 5% 10%px;
+    padding: 1% 3%;
     background-color: #F0FFFF;
     margin-top: -60px;
-    /* position: relative; */
     text-align: center;
-    /* display: flex;
-    flex-direction: column; */
     border-radius: 10px;
+    flex-shrink: 0.3;
 }
 
 .experience-description {
@@ -221,16 +251,23 @@ ol, ul {
     margin: 0 5px;
     display: inline;
 }
+.date {
+    margin: 0 5px;
+    display: inline;
+}
 
 .experience-imageContainer {
     margin: 0;
     overflow: hidden;
+    flex-shrink: 0.3;
 
 }
 
 .experience-image {
-    width: 400px;
-    height: 300px;
+    width: auto;
+    flex-shrink: 0.3;
+    max-width: 280px;
+    min-width: 180px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -266,13 +303,15 @@ ol, ul {
 .contact {
     background-color: #086195;
     color: white;
-    height: 150px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 40px;
+    padding: 1% 3%;
     margin: 0;
-    clip-path: polygon(0 0, 100% 30px, 100% 100%, 0 100%);
+    margin-top: 15px;
+    /* clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%); */
+    clip-path: polygon(50% 0%, 100% 10%, 100% 95%, 50% 100%, 0 95%, 0 10%);
 }
 
 .social-link {
@@ -378,6 +417,10 @@ ol, ul {
 
 }
 
+.Skills h2{
+    margin: 15px 0 7px;
+}
+
 .Meter {
     display: block;
     border: #141313 1px solid;
@@ -400,25 +443,25 @@ ol, ul {
     background-color: #0A0E41;
 }
 .Java{
-    width: 75%;
+    width: 70%;
 }
 
 .Csharp{
-    width: 65%;
+    width: 60%;
 }
 .Cpp{
-    width: 60%;
+    width: 50%;
 }
 .SQL{
-    width: 60%;
+    width: 50%;
 }
 
 .Web{
-    width: 60%;
+    width: 30%;
 }
 
 .Git{
-    width:80%;
+    width:75%;
 }
 
 .percent p {
@@ -430,12 +473,14 @@ ol, ul {
     padding: 3%;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows:20% 40% 40%;
+    grid-template-rows:20% 20% 60%;
     background-color: #B4DADE;
     background-color: #e3eff3;
     align-items: flex-start;
-    width: 90%;
+    width: 99%;
+    margin: 0;
     margin-top: -30px;
+    box-sizing: border-box;
     flex-direction: column;
 
 }
@@ -443,11 +488,53 @@ ol, ul {
 .MyInfo p{
     margin: 2px;
 }
+.Communication{
+    width: 80%;
+}
+
+.TeamWork{
+    width: 75%;
+}
+
+.Flexibility{
+    width: 70%;
+}
+
+.Proactivity{
+    width: 70%;
+}
 .english{
     width: 60%;
 }
 .japanese{
+    display: flex;
     width: 10%;
+    text-align: end;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+
+.Education{
+    width: 95%;
+    height: auto;
+    
+}
+.Education-detail{
+    width: 95%;
+    justify-content: space-around;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-shrink: 0.8;
+}
+
+.Education-detail article{
+    display: block;
+    padding: 3%;
+    width: 30%;
+    height: auto;
+    min-width: 200px;
 }
 
 .fas, .fab{
