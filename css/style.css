@@ -103,7 +103,7 @@ section {
     flex-wrap: wrap;
     background-color: #086195;
     background-color: #50a4ce;
-    margin: 10px 25px 0 25px;
+    margin: 10px 25px 10px 0;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -273,15 +273,31 @@ p{
 }
 
 .portfolio {
-    margin: 15px;
     display: flex;
     width: auto;
+    height: auto;
     align-self: flex-start;
     justify-content: space-between;
 }
 
-.project-details {
-    padding: 10px;
+.project {
+    padding: 3%x;
+    min-width: 200px;
+    max-width: 300px;
+    width: auto;
+    height: inherit;
+    text-align: center;
+    padding: 1%;
+    flex-shrink: 30%;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.project-description {
+    padding: 2%;
+    text-align: justify;
+
 }
 
 .footer {
@@ -378,10 +394,11 @@ p{
     height: initial;
 }
 
-.me {
+#me {
     display: flex;
     flex-shrink: 0;
     height: inherit;
+    margin-left: 8px;
 }
 
 .profile {
