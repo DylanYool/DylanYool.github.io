@@ -1,17 +1,4 @@
-body {
-    font-family: "Source Sans Pro", sans-serif;
-    /* background-color: #4e9dc4; */
-    background-color: #ECFDFD;
-    margin: 0px;
-    padding: 0px;
-    color: #282928;
-    display: flex;
-    flex-direction: column;
-}
-hr{
-    width: 95%;
-    margin: 3px;
-}
+
 .header {
     background-color: #141313;
     justify-content: space-between;
@@ -74,72 +61,14 @@ hr{
     font-size: 28px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: normal;
-    font-style: italic;
-    margin:2px
-}
-
-h1 {
-    font-size: 48px;
-    line-height: 150%;
-    letter-spacing: -0.2px;
-}
-
-h1 strong {
-    color: #086195;
-}
-
-h3 strong {
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: -0.3px;
-}
-
-section {
-    display: flex;
-    border: #070D3D 1px solid;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    background-color: #086195;
-    background-color: #F7F9F0;
-    margin: 10px 15px 10px 0;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .section-title {
     font-size: 28px;
     line-height: 1.25;
     letter-spacing: -0.2px;
-    margin: 5px;
+    margin: 50px 0 15px 0;
     color: #131414
 }
-
-article {
-    width: 50%;
-    border-color: #0A0E41;
-    border-width: 1px;
-    border-radius: 8px;
-    border-style: ridge;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: #F7F9F0;
-    display: flex;
-    flex-direction: column;
-}
-
-ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-p{
-    margin: 2px;
-}
-
-/* selector de clase inicia con un punto*/
 
 .hero {
     height: 100px;
@@ -200,19 +129,20 @@ p{
 
 .experience {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 
 .experience-article {
     width: auto;
-    max-width: 295px;
+    max-width: 350px;
     min-width: 200px;
     display: block;
     text-align: center;
     padding: 1%;
     flex-shrink: 30%;
+    margin: 20px 20px;
     box-sizing: border-box;
     object-fit: cover;
     overflow: hidden;
@@ -321,6 +251,8 @@ p{
 .contact {
     background-color: #086195;
     color: white;
+    min-height: 100px;
+    max-height: 200px;
     height: auto;
     display: flex;
     align-items: center;
@@ -398,15 +330,17 @@ p{
 }
 
 .profile {
+    margin-left: 10px;
     display: block;
     background-color: #F7F9F0;
-    height: auto;
+    height:  max-content;
     padding: 3%;
     max-width: 400px;
 }
 
 .cards {
     display: flexbox;
+    margin: 10px 10px 10px 100px;
 }
 
 .Skills {
@@ -439,7 +373,7 @@ p{
     border: #141313 1px solid;
     border-radius: 10px;
     width: auto;
-    height: 20px;
+    height: 14px;
     margin-bottom: 10px;
     background-color: #ECFDFD;
 }
@@ -451,7 +385,7 @@ p{
     margin: 1px;
     border: #0A0E41 1px solid;
     border-radius: 10px;
-    height: 80%;
+    height: 70%;
     color: whitesmoke;
     background-color: #086195;
 }
