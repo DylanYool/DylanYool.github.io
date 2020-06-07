@@ -1,13 +1,15 @@
-@media (max-width:800px){
-    section{
+@media (max-width:950px) {
+    section {
         display: inherit;
         flex-direction: inherit;
         height: auto;
         flex-wrap: wrap;
-       
-
     }
-    .menu{ 
+    .board {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
         display: flex;
         margin: 0;
         position: sticky;
@@ -16,17 +18,28 @@
     .menu ol, ul {
         display: inherit;
         flex-wrap: wrap;
-
     }
-    
     .menu li {
         display: inherit;
     }
-    
     .menu a {
         text-decoration: none;
         align-items: center;
         padding: 2px 5px;
+        font-size: 16px;
+        margin: 2px;
+    }
+    .profile {
+        max-width: 95%;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .MyInfo {
+        /* height: 50%; */
+        max-width: 50%;
+        max-height: 80%;
     }
     .hero-Description {
         color: whitesmoke;
@@ -35,7 +48,7 @@
         margin: 10px;
         box-sizing: border-box;
     }
-    .hero-Description  h1{
+    .hero-Description h1 {
         color: whitesmoke;
         width: inherit;
         font-size: auto;
@@ -43,7 +56,6 @@
         margin: 10px;
         box-sizing: border-box;
     }
-    
     .hero {
         flex-direction: column;
         height: auto;
@@ -51,19 +63,18 @@
         padding: 0;
         flex-wrap: nowrap;
     }
-    .picture img{
+    .picture img {
         width: 100%;
         height: auto;
         max-width: 400px;
         max-height: 400px;
         object-fit: cover;
     }
-
-    .experience-article{
+    .experience-article {
         width: auto;
     }
     .experience-image {
-        width:100%;
+        width: 100%;
         height: 300px;
         object-fit: cover;
     }
@@ -77,12 +88,12 @@
         padding: auto;
         flex-wrap: wrap;
     }
-    .form-email input{
+    .form-email input {
         border: #4b4e55 1px solid;
         border-radius: 5px;
         height: 30px;
         width: 80%;
-        padding:2px 20px 2px 28px;
+        padding: 2px 20px 2px 28px;
         background-image: url("http://www.bolandschool.com/wp-content/uploads/2016/10/icon-mail.png");
         background-size: 20px 20px;
         background-position-y: center;
@@ -90,11 +101,11 @@
         background-repeat: no-repeat;
         margin-top: 7px;
     }
-    .social{
-        display:inherit;
+    .social {
+        display: inherit;
         flex-wrap: wrap;
     }
-    .footer{
+    .footer {
         display: flex;
         flex-direction: inherit;
         height: auto;
@@ -105,5 +116,36 @@
         flex-direction: inherit;
         height: auto;
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width:300px) {
+    article {
+        width: auto;
+        max-width: 200px;
+    }
+    .MyInfo{
+        max-width: 95%;
+    }
+    .cards {
+        margin: 10px
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        height: 300px;
+        padding: 50px 15px 25px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .social {
+        display: inline;
+    }
+    .skill {
+        width: 100%;
+    }
+    .Skill h3{
+        font-size: 1.5em;
     }
 }
