@@ -166,8 +166,8 @@
 }
 
 .experience-detail {
-    margin: 5% 10%px;
-    padding: 1% 3%;
+    margin: 5% 10%;
+    padding: 1% 5%;
     background-color: #F0FFFF;
     margin-top: -60px;
     text-align: center;
@@ -259,6 +259,8 @@
     justify-content: space-between;
     padding: 1% 3%;
     margin: 0;
+    border: none;
+    border-radius: 0;
     margin-top: 15px;
     /* clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%); */
     clip-path: polygon(50% 0%, 100% 10%, 100% 95%, 50% 100%, 0 95%, 0 10%);
@@ -343,28 +345,42 @@
     margin: 10px 10px 10px 100px;
 }
 
-.Skills {
-    width: auto;
+.Skills-detail{
+    width: 100%;
+    height: auto;
     justify-content: space-around;
-    align-items: center;
-    display: block;
-    margin: 10px;
-    /* display: flexbox;
-    display: -ms-flexbox; */
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     text-align: center;
+    min-height: 450px;
+    box-sizing: border-box;
+
 }
 
-.Skills p,.Skills h4,.Skills h3{
+.Skill{
+    display: flex;
+    max-width: 200px;
+    min-width: 150px;
+    padding:  0 10px;
+    max-height: 100%;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    margin: 0;
+}
+
+
+.Skill p,.Skill h4,.Skill h3{
     margin: 10px 0;
     text-align: left;
     text-justify: auto;
     color: #131414;
     font-weight: lighter;
-
+    justify-content: stretch;
+    flex-shrink: 1;
 }
 
-.Skills h2{
+.Skill h2{
     margin: 15px 0 7px;
 }
 
@@ -482,11 +498,14 @@
 }
 
 .Education-detail article{
-    display: block;
+    display: flexbox;
     padding: 3%;
     width: 30%;
     height: auto;
     min-width: 200px;
+    max-height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .fas, .fab{
