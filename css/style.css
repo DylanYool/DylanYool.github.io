@@ -109,7 +109,7 @@
     /* justify-content:start; */
     box-sizing: border-box;
     object-fit: cover;
-    max-width: 300px;
+    max-width:100%;
     max-height: 300px;
     border: whitesmoke 2px solid;
     border-image: 1px;
@@ -329,6 +329,7 @@
     flex-shrink: 0;
     height: inherit;
     margin-left: 8px;
+    flex-direction: column;
 }
 
 .profile {
@@ -342,8 +343,14 @@
 
 .cards {
     display: flexbox;
-    margin: 10px 10px 10px 100px;
+    margin: 10px 10px 10px 50px;
 }
+.Skills{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
 
 .Skills-detail{
     width: 100%;
@@ -357,15 +364,19 @@
     box-sizing: border-box;
 
 }
+.Skills{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
 
 .Skill{
     display: flex;
-    max-width: 200px;
+    width: 90%;
     min-width: 150px;
     padding:  0 10px;
     max-height: 100%;
     box-sizing: border-box;
-    flex-shrink: 1;
     margin: 0;
 }
 
@@ -382,6 +393,9 @@
 
 .Skill h2{
     margin: 15px 0 7px;
+}
+.Skill h3{
+    font-size: 2em;
 }
 
 .Meter {
