@@ -3,6 +3,13 @@ body {
     grid-template: 90px 1fr 150px/minmax(200px, 400px) 1fr;
     grid-template-areas: "header header" "left content" "footer footer";
     gap: 30px 20px;
+    background-color: #094f6e;
+    color: #e4f5ff;
+}
+section{
+    background-color: #2d7a9c;
+    margin-right: 25px;
+    border-radius: 15px;
 }
 
 .header {
@@ -28,7 +35,7 @@ body {
 
 .menu {
     color: black;
-    background-color: #086195;
+    background-color: #022636;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -113,7 +120,7 @@ body {
     object-fit: cover;
     max-width: 100%;
     max-height: 300px;
-    border: whitesmoke 2px solid;
+    border: #022636 2px solid;
     border-image: 1px;
     border-radius: 50%;
 }
@@ -125,7 +132,7 @@ body {
 }
 
 .link {
-    color: cadetblue;
+    color: #e4f5ff;
     text-decoration: none;
 }
 
@@ -172,7 +179,8 @@ body {
 .experience-detail {
     margin: 5% 10%;
     padding: 1% 5%;
-    background-color: #F0FFFF;
+    background-color: #95c7d5;
+    color: #022636;
     margin-top: -60px;
     text-align: center;
     border-radius: 10px;
@@ -233,13 +241,15 @@ body {
 .project-description {
     padding: 2%;
     text-align: justify;
+    background-color: #95c7d5;
+    color: #022636;
 }
 
 .footer {
     grid-area: footer;
     display: grid;
     grid-template-rows: 1fr 20px;
-    background-color: #0A0E41;
+    background-color: #2d7a9c;
     color: #FBFAFF;
     align-items: center;
     height: min-content;
@@ -259,7 +269,7 @@ body {
 }
 
 .contact {
-    background-color: #086195;
+    background-color: #022636;
     color: white;
     min-height: 100px;
     height: 200px;
@@ -346,7 +356,7 @@ body {
 .profile {
     margin-left: 10px;
     display: block;
-    background-color: #F7F9F0;
+    background-color: #2d7a9c;
     height: max-content;
     padding: 3%;
     max-width: 400px;
@@ -390,7 +400,7 @@ body {
     margin: 10px 0;
     text-align: left;
     text-justify: auto;
-    color: #131414;
+    color: #e4f5ff;
     font-weight: lighter;
     justify-content: stretch;
     flex-shrink: 1;
@@ -411,7 +421,7 @@ body {
     width: auto;
     height: 14px;
     margin-bottom: 10px;
-    background-color: #ECFDFD;
+    background-color: #95c7d5;
 }
 
 .percent {
@@ -423,11 +433,11 @@ body {
     border-radius: 10px;
     height: 70%;
     color: whitesmoke;
-    background-color: #086195;
+    background-color: #2d7a9c;
 }
 
 .percent p {
-    color: white;
+    color: #e4f5ff;
     font-weight: bold;
 }
 
@@ -465,8 +475,8 @@ body {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 20% 20% 60%;
-    background-color: #B4DADE;
-    background-color: #e3eff3;
+    background-color: #95c7d5;
+    color: #022636;
     align-items: flex-start;
     width: 99%;
     margin: 0;
