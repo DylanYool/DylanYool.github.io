@@ -14,4 +14,37 @@
         background-color: #094f6e;
         color: #e4f5ff;
     }
+    .menu {
+        color: black;
+        background-color: rgba(2, 37, 52, .6);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        transition: 1s;
+        clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 80%, 85% 85%, 75% 100%, 25% 100%, 15% 85%, 0 80%);
+    }
+    .menu.active {
+        left: 0;
+    }
+    .menu ol, ul {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        width: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+    }
+    .menu li {
+        height: auto;
+        display: inline-block;
+        text-align: left;
+    }
 }

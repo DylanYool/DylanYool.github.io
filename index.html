@@ -22,8 +22,9 @@
         <!-- <figure class="logo">
             <img src="Images/Logo2.png" alt="Logo">
         </figure> -->
-
+        <i class="fas fa-bars" id="burger-menu"></i>
         <nav class="menu">
+
             <ul>
                 <li><a class="link" href="#me">Acerca de Mi</a></li>
                 <li><a class="link" href="#experiencia">Experiencias</a></li>
@@ -38,8 +39,8 @@
         <section class="profile">
             <hr>
             <figure class="picture">
-                <img src="https://pbs.twimg.com/profile_images/1252053996648398849/8odKipBj_400x400.jpg"
-                    alt="https://pbs.twimg.com/profile_images/1252053996648398849/8odKipBj_400x400.jpg">
+                <img src="https://pbs.twimg.com/profile_images/1287188488467746816/2Mx1uTfC_400x400.jpg"
+                    alt="https://twitter.com/DylanYool/photo">
             </figure>
 
             <article class="MyInfo">
@@ -189,33 +190,33 @@
             <section class="Education">
 
 
-                    <article>
-                        <p>
-                        <h3><i class="fas fa-university"></i>University</h3>
-                        </p>
-                        <hr>
-                        <p>
-                        <h4>&#34Ingenieria en Ciencias y Sistemas&#34</h4>
-                        </p>
-                        <p>4&#186 semester closed</p>
-                        <p>
-                        <h3>Universidad de San Carlos de Guatemala</h3>
-                        </p>
-                    </article>
+                <article>
+                    <p>
+                    <h3><i class="fas fa-university"></i>University</h3>
+                    </p>
+                    <hr>
+                    <p>
+                    <h4>&#34Ingenieria en Ciencias y Sistemas&#34</h4>
+                    </p>
+                    <p>4&#186 semester closed</p>
+                    <p>
+                    <h3>Universidad de San Carlos de Guatemala</h3>
+                    </p>
+                </article>
 
-                    <article>
-                        <p>
-                        <h3><i class="fas fa-graduation-cap"></i>High School</h3>
-                        </p>
-                        <hr>
-                        <p>
-                        <h4>&#34Bachillerato en Computación&#34</h4>
-                        </p>
-                        <p>Bachelor Degree</p>
-                        <p>
-                        <h3>Liceo Rotterdam</h3>
-                        </p>
-                    </article>
+                <article>
+                    <p>
+                    <h3><i class="fas fa-graduation-cap"></i>High School</h3>
+                    </p>
+                    <hr>
+                    <p>
+                    <h4>&#34Bachillerato en Computación&#34</h4>
+                    </p>
+                    <p>Bachelor Degree</p>
+                    <p>
+                    <h3>Liceo Rotterdam</h3>
+                    </p>
+                </article>
 
             </section>
         </div>
@@ -406,6 +407,17 @@
             </p>
         </div>
     </footer>
+    <script>
+    console.log("primera linea de js");
+    const menu=document.querySelector('.menu');
+    console.log(menu);
+    const burgerButton=document.querySelector('#burger-menu');
+    console.log(burgerButton);
+    burgerButton.addEventListener('click',function(){
+        menu.classList.toggle('active')
+        console.log('clickeado madafaka')
+    })
+    </script>
 </body>
 
 </html>
