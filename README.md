@@ -1,1 +1,1 @@
-https://dylanyool.github.io/Index.html
+https://dylanyool.github.io
