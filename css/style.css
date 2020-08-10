@@ -53,6 +53,7 @@ section {
     display: inherit;
     height: inherit;
     width: 80%;
+    margin:5px 10px ;
     justify-content: space-evenly;
 }
 
@@ -434,7 +435,7 @@ section {
     border-radius: 10px;
     height: 70%;
     color: whitesmoke;
-    background-color: #2d7a9c;
+    background-color: #022534;
 }
 
 .percent p {

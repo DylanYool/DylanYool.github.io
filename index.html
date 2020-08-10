@@ -384,10 +384,10 @@
     <!-- Contacto y footer  -->
     <footer class="footer">
         <div id="contacto" class="contact">
+            <h3>¿Qué tienes en mente?</h3>
             <form action="" class="form-email">
-                <h3>¿Qué tienes en mente?</h3>
                 <input type="email" placeholder="Déjame tu email">
-                <button>Enviar</button>
+                <button>Send</button>
             </form>
             <div class="social">
                 <a href="https://twitter.com/DylanYool" target="_blank" class="social-link twitter"><i
@@ -408,15 +408,30 @@
         </div>
     </footer>
     <script>
-    console.log("primera linea de js");
-    const menu=document.querySelector('.menu');
-    console.log(menu);
-    const burgerButton=document.querySelector('#burger-menu');
-    console.log(burgerButton);
-    burgerButton.addEventListener('click',function(){
-        menu.classList.toggle('active')
-        console.log('clickeado madafaka')
-    })
+        console.log("primera linea de js");
+        const menu = document.querySelector('.menu');
+        console.log(menu);
+        const burgerButton = document.querySelector('#burger-menu');
+        console.log(burgerButton);
+        const cel = window.matchMedia('screen and (max-width:320px)')
+
+        function burgerfunction() {
+            menu.classList.toggle('active')
+            console.log('clickeado madafaka')
+        }
+        if(document.documentElement.clientWidth<=320){
+            burgerButton.addEventListener('click', burgerfunction)
+            console.log('pantalla chikita jajaja')
+        }
+        cel.addListener(function (event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', burgerfunction)
+                console.log('Qué dices?')
+            } else {
+                burgerButton.removeEventListener('click', burgerfunction)
+                console.log('lalala no te oigo lalala')
+            }
+        })
     </script>
 </body>
 
