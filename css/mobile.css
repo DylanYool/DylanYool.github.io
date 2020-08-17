@@ -2,54 +2,14 @@
 @media screen and (max-width:950px) {
     body {
         display: grid;
-        grid-template-rows: 30px min-content min-content minmax(150px, auto);
+        grid-template-rows: 30px min-content min-content minmax(min-content,auto);
         grid-template-areas: none;
         grid-template-areas: "header" "left" "content" "footer";
         gap: 10px 5px;
-        background-color: whitesmoke;
         color: #e4f5ff;
     }
     section {
         margin: 0px;
-    }
-    .menu {
-        color: black;
-        background-color: rgba(2, 37, 52, .6);
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        position: fixed;
-        z-index: 4;
-        top: 0;
-        left: -100vw;
-        width: 100vw;
-        height: 100vh;
-        transition: 1s;
-        clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 80%, 85% 85%, 75% 100%, 25% 100%, 15% 85%, 0 80%);
-    }
-    .menu.active {
-        left: 0;
-    }
-    .menu ol, ul {
-        display: flex;
-        flex-direction: column;
-        height: inherit;
-        width: auto;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0px;
-    }
-    .menu li {
-        height: auto;
-        display: inline-block;
-        text-align: left;
-    }
-    .header {
-        background-color: transparent;
-        margin: 0px;
-        padding: 0px;
-        height: min-content;
     }
     #burger-menu {
         margin: 0px;
@@ -58,6 +18,10 @@
         height: min-content;
         position: sticky;
         z-index: 5;
+        display:none;
+    }
+    .menu a {
+        font-size: 22px;
     }
     #me {
         width: 100vw;
@@ -82,6 +46,7 @@
         grid-column-start: 1;
         grid-column-end: 4;
         justify-content: space-between;
+        
     }
     .MyInfo{
         height: 65%;
@@ -137,7 +102,7 @@
         display: flex;
         flex-direction: column;
         width: auto;
-        height: auto;
+        height: min-content;
         align-self: flex-start;
         padding: 5px;
         margin: 5px;
@@ -191,21 +156,23 @@
         width: 90%;
     }
     .social-link {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         width: auto;
-        height: 30px;
-        margin: 0 10px;
+        height: 50px;
+        margin: 10px 10px;
         color: white;
         text-decoration: none;
         text-align: center;
-    }
-    .social-link {
         width: 90%;
-        height: 30px;
-        color: white;
         vertical-align: center;
         font-size: 8px;
-        margin: 0 2px;
+        /* margin: 0 2px; */
+    }
+    .social-link a{
+        margin: 5px;
     }
     .social-link .fab, .social-link .fas {
         height: 15px;
@@ -215,6 +182,7 @@
         z-index: 5;
         background-color: #022534;
         border-radius: 5px;
+        text-align: center;
     }
     .section-title {
         margin-left: 12px;
@@ -225,11 +193,10 @@
 @media screen and (max-width:460px) {
     body {
         display: grid;
-        grid-template-rows: 30px min-content min-content minmax(150px, auto);
+        grid-template-rows: 30px min-content min-content minmax(min-content,auto);
         grid-template-areas: none;
         grid-template-areas: "header" "left" "content" "footer";
         gap: 10px 5px;
-        background-color: #094f6e;
         color: #e4f5ff;
     }
     section {
@@ -275,6 +242,7 @@
         height: min-content;
     }
     #burger-menu {
+        display:flex;
         margin: 0px;
         padding: 5px;
         font-size: 25px;
@@ -293,12 +261,24 @@
         padding: 10px;
         box-sizing: border-box;
     }
+    .MyInfo{
+        height: auto;
+        margin: 5px;
+        width: 90%;
+        justify-content: space-evenly;
+        border-radius: 10%;
+        border: black dashed 1px;
+    }
     .profile {
+        grid-column-start: 1;
+        grid-column-end: 2;
         width: 90%;
         padding: 5px;
         margin-left: 8px;
         margin-top: 5px;
         margin-right: 0px;
+        display: flex;
+        flex-direction: column;
     }
     .Skills {
         width: 90%;
@@ -350,7 +330,7 @@
         display: flex;
         flex-direction: column;
         width: auto;
-        height: auto;
+        height: min-content;
         align-self: flex-start;
         padding: 5px;
         margin: 5px;
@@ -398,23 +378,14 @@
         color: #e4f5ff;
         font-size: 12px;
     }
-    .social {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-    }
+
     .social-link {
-        display: inline-block;
-        width: auto;
-        height: 30px;
-        margin: 0 10px;
-        color: white;
+        display: flex;
+        flex-direction: column;
         text-decoration: none;
         text-align: center;
-    }
-    .social-link {
         width: 90%;
-        height: 30px;
+        height: 40px;
         color: white;
         vertical-align: center;
         font-size: 8px;
