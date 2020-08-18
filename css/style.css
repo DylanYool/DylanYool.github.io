@@ -1,9 +1,9 @@
 body {
     display: grid;
-    grid-template: 90px 1fr minmax(min-content,150px)/minmax(200px, 400px) 1fr;
+    grid-template: 90px 1fr minmax(min-content, 150px)/minmax(200px, 400px) 1fr;
     grid-template-areas: "header header" "left content" "footer footer";
     gap: 30px 20px;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     color: #e4f5ff;
 }
 
@@ -55,7 +55,7 @@ section {
     display: inherit;
     height: inherit;
     width: 80%;
-    margin:5px 10px ;
+    margin: 5px 10px;
     justify-content: space-evenly;
 }
 
@@ -332,7 +332,6 @@ section {
 }
 
 .profile {
-
     margin-left: 10px;
     display: block;
     background-color: #2d7a9c;
@@ -543,6 +542,57 @@ section {
 .fas, .fab {
     margin: 1px 7px;
 }
-#credits p{
-    margin:0px
+
+#credits p {
+    margin: 0px
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+a:hover {
+    font-weight: bold;
+    font-style: italic;
+    color: #96c7d5
+}
+
+@keyframes fadeIn {}
+
+.Skills:hover .percent {
+    animation-name: percent-process;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes percent-process {
+    0% {
+        width: 10%;
+        background-color: #e4f5ff;
+    }
+    20% {
+        width: 25%;
+        background-color: #094f6e;
+
+    }
+    40% {
+        width: 45%;
+        background-color: #2d7a9c;
+
+    }
+    60% {
+        width: 55%;
+        background-color: #96c7d5;
+
+    }
+    80% {
+        width: 60%;
+        background-color: #094f6e;
+
+    }
+    100% {
+        width: 55%;
+        background-color: #022534;
+
+    }
 }

@@ -411,15 +411,15 @@
         console.log(menu);
         const burgerButton = document.querySelector('#burger-menu');
         console.log(burgerButton);
-        const cel = window.matchMedia('screen and (max-width:460px)')
-
+        const cel = window.matchMedia('screen and (max-width:460px)');
         function burgerfunction() {
             menu.classList.toggle('active')
             console.log('clickeado madafaka')
         }
         if (document.documentElement.clientWidth <= 460) {
-            burgerButton.addEventListener('click', burgerfunction)
-            console.log('pantalla chikita jajaja')
+            burgerButton.addEventListener('click', burgerfunction);
+            menu.addEventListener('click', burgerfunction);
+            console.log('pantalla chikita jajaja');
         }
         cel.addListener(function (event) {
             if (event.matches) {
