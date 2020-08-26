@@ -11,15 +11,7 @@
     section {
         margin: 0px;
     }
-    #burger-menu {
-        margin: 0px;
-        padding: 5px;
-        font-size: 25px;
-        height: min-content;
-        position: sticky;
-        z-index: 5;
-        display:none;
-    }
+
     .menu a {
         font-size: 22px;
     }
@@ -45,8 +37,13 @@
         margin-right: 0px;
         grid-column-start: 1;
         grid-column-end: 4;
-        justify-content: space-between;
+        justify-content: space-evenly;
         
+    }
+    .profile hr{
+        display: none;
+        width: 0px;
+        margin:0px;
     }
     .MyInfo{
         height: 65%;
@@ -68,22 +65,37 @@
         border: #022636 2px solid;
         justify-content: space-evenly;
         box-sizing: border-box;
+        column-gap: 15px;
         padding: 5px;
         margin-left: 18px;
         margin-top: 5px;
+    }
+    .Education article{
+        width: 40vw;
+        max-width: 310px;
+        box-sizing: border-box;
     }
     .experience {
         height: auto;
         display: grid;
         width: 90vw;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
         justify-content: center;
+        align-items: flex-start;
         grid-auto-rows: min-content;
         grid-auto-flow: row;
         box-sizing: border-box;
         padding: 5px;
         margin-left: 18px;
         margin-top: 5px;
+        box-sizing: border-box;
+    }
+    .experience-article{
+        margin: 0px;
+        padding: 0px;
+        width: 40vw;
+        max-width: 310px;
         box-sizing: border-box;
     }
     .portfolio {
@@ -278,14 +290,23 @@
         margin-top: 5px;
         margin-right: 0px;
         display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
         flex-direction: column;
     }
+
     .Skills {
         width: 90%;
         padding: 5px;
         margin-left: 8px;
         margin-top: 5px;
         margin-right: 0px;
+    }
+    .Skill{
+        width: 80vw;
+        max-width: 90%;
+        box-sizing: border-box;
     }
     .Education {
         height: auto;
@@ -296,9 +317,15 @@
         grid-auto-rows: min-content;
         grid-auto-flow: row;
         box-sizing: border-box;
+        row-gap: 15px;
         padding: 5px;
         margin-left: 18px;
         margin-top: 5px;
+    }
+    .Education article{
+        width: 80vw;
+        max-width: 310px;
+        box-sizing: border-box;
     }
     .experience {
         height: auto;
@@ -312,6 +339,13 @@
         padding: 5px;
         margin-left: 18px;
         margin-top: 5px;
+        box-sizing: border-box;
+    }
+    .experience-article{
+        margin: 0px;
+        padding: 0px;
+        width: 75vw;
+        max-width: 310px;
         box-sizing: border-box;
     }
     .portfolio {

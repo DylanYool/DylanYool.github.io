@@ -11,6 +11,15 @@ section {
     background-color: #2d7a9c;
     margin-right: 25px;
     border-radius: 15px;
+
+}
+section:hover{
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-name: 4s;
+    -webkit-animation-fill-mode: both;
 }
 
 .header {
@@ -33,7 +42,10 @@ section {
     object-fit: cover;
     justify-self: start;
 }
-
+#burger-menu {
+    display:none;
+    margin: 0px;
+}
 .menu {
     color: black;
     background-color: #022636;
@@ -144,6 +156,7 @@ section {
 
 .experience-card {
     width: inherit;
+    max-width: inherit;
     box-sizing: border-box;
     display: inline-flex;
     flex-direction: column;
@@ -180,6 +193,7 @@ section {
     margin: 0;
     overflow: hidden;
     flex-shrink: 0.3;
+    max-width: 99%;
 }
 
 .experience-image {
@@ -362,6 +376,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-left: 10px;
 }
 
@@ -535,8 +550,9 @@ section {
     text-align: center;
     position: fixed;
     z-index: 5;
-    background-color: #022534;
-    border-radius: 5px;
+    color: #022636;
+    background-color:transparent;
+        border-radius: 5px;
 }
 
 .fas, .fab {
@@ -565,34 +581,3 @@ a:hover {
     animation-delay: 0.5s;
 }
 
-@keyframes percent-process {
-    0% {
-        width: 10%;
-        background-color: #e4f5ff;
-    }
-    20% {
-        width: 25%;
-        background-color: #094f6e;
-
-    }
-    40% {
-        width: 45%;
-        background-color: #2d7a9c;
-
-    }
-    60% {
-        width: 55%;
-        background-color: #96c7d5;
-
-    }
-    80% {
-        width: 60%;
-        background-color: #094f6e;
-
-    }
-    100% {
-        width: 55%;
-        background-color: #022534;
-
-    }
-}
