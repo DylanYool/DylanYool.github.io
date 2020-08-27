@@ -13,14 +13,6 @@ section {
     border-radius: 15px;
 
 }
-section:hover{
-    animation-name: fadeIn;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-name: 4s;
-    -webkit-animation-fill-mode: both;
-}
 
 .header {
     grid-area: header;
@@ -96,6 +88,21 @@ section:hover{
     color: #131414
 }
 
+.profile {
+    margin-left: 10px;
+    display: block;
+    background-color: #2d7a9c;
+    height: max-content;
+    padding: 3%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.profile figure {
+    display:flex;
+    justify-content: center;
+}
+
 .picture {
     margin: 10px 0;
 }
@@ -105,8 +112,9 @@ section:hover{
     height: 100%;
     box-sizing: border-box;
     object-fit: cover;
-    max-width: 100%;
+   /** max-width: 100%;*/
     max-height: 300px;
+    max-width: 300px;;
     border: #022636 2px solid;
     border-image: 1px;
     border-radius: 50%;
@@ -341,17 +349,9 @@ section:hover{
     display: grid;
     grid-auto-rows: min-content;
     height: inherit;
+    gap:10px;
     margin-left: 8px;
     margin-top: 15px;
-}
-
-.profile {
-    margin-left: 10px;
-    display: block;
-    background-color: #2d7a9c;
-    height: max-content;
-    padding: 3%;
-    max-width: 400px;
 }
 
 .cards {
@@ -467,19 +467,21 @@ section:hover{
     padding: 3%;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 20% 60%;
+    grid-template-rows: 25px 25px 1fr;
     background-color: #95c7d5;
     color: #022636;
-    align-items: flex-start;
+    gap:2px;
     width: 99%;
     margin: 0;
-    margin-top: -30px;
+    margin-top: -20px;
     box-sizing: border-box;
-    flex-direction: column;
+
 }
 
-.MyInfo p {
-    margin: 2px;
+.MyInfo p ,h3 {
+    margin: 0px;
+    max-height: fit-content;
+   /**font-size: smaller;*/
 }
 
 .Communication {
@@ -513,12 +515,15 @@ section:hover{
 
 .Education {
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    justify-content: space-around;
-    grid-auto-flow: row;
+    display: flex;
+   /* width: 92vw;*/
+    border: #022636 2px solid;
+    justify-content: space-evenly;
     box-sizing: border-box;
-    padding: 15px 30px;
+    column-gap: 15px;
+    padding: 5px;
+    margin-left: 18px;
+    margin-top: 5px;
 }
 
 .Education-detail {
@@ -533,7 +538,7 @@ section:hover{
 .Education article {
     display: flexbox;
     padding: 5%;
-    width: 30%;
+    width: 40%;
     height: auto;
     min-width: 150px;
     max-height: fit-content;
@@ -541,6 +546,8 @@ section:hover{
     border: #022636 1px dashed;
     border-radius: 25%;
     justify-content: space-evenly;
+    max-width: 310px;
+    box-sizing: border-box;
 }
 
 .fa-bars {
@@ -572,8 +579,13 @@ a:hover {
     font-style: italic;
     color: #96c7d5
 }
+section{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
 
-@keyframes fadeIn {}
 
 .Skills:hover .percent {
     animation-name: percent-process;
