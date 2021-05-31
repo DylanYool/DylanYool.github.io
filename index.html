@@ -19,10 +19,12 @@
 </head>
 
 <body>
+
+
     <header class="header">
-        <!-- <figure class="logo">
-            <img src="Images/Logo2.png" alt="Logo">
-        </figure> -->
+        <figure class="logo" id="logo">
+            <img src="Images/Logo-Dylan.svg" alt="Logo">
+        </figure>
         <i class="fas fa-bars" id="burger-menu"></i>
         <nav class="menu">
             <ul>
@@ -413,26 +415,28 @@
     <script>
         console.log("primera linea de js");
         const menu = document.querySelector('.menu');
-        console.log(menu);
         const burgerButton = document.querySelector('#burger-menu');
-        console.log(burgerButton);
+        const menuOpcion = document.querySelector('.menu ul li');
+        const LogoButton = document.querySelector('#logo');
         const cel = window.matchMedia('screen and (max-width:460px)');
         function burgerfunction() {
             menu.classList.toggle('active')
-            console.log('clickeado madafaka')
         }
         if (document.documentElement.clientWidth <= 460) {
             burgerButton.addEventListener('click', burgerfunction);
+            LogoButton.addEventListener('click',burgerfunction);
             menu.addEventListener('click', burgerfunction);
-            console.log('pantalla chikita jajaja');
+            menuOpcion.addEventListener('click', burgerfunction);
         }
         cel.addListener(function (event) {
             if (event.matches) {
                 burgerButton.addEventListener('click', burgerfunction)
-                console.log('Qué dices?')
+                LogoButton.addEventListener('click', burgerfunction)
+                menuOpcion.addEventListener('click', burgerfunction)
             } else {
                 burgerButton.removeEventListener('click', burgerfunction)
-                console.log('lalala no te oigo lalala')
+                LogoButton.removeEventListener('click', burgerfunction)
+                menuOpcion.removeEventListener('click', burgerfunction)
             }
         })
     </script>

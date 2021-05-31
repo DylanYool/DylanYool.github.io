@@ -11,19 +11,21 @@ section {
     background-color: #2d7a9c;
     margin-right: 25px;
     border-radius: 15px;
-
 }
 
 .header {
     grid-area: header;
-    background-color: #141313;
-    justify-content: space-between;
+    display: flex;
+    background-color:transparent;
+    justify-content: center;
     height: 30px;
     align-items: center;
-    box-sizing: content-box;
+    box-sizing: border-box;
     position: sticky;
+    padding: 10px;
     top: 0;
-    z-index: 1;
+    z-index: 2;
+    width: 100vw;
     /* clip-path: polygon(0 0,100% 30px,100% 100%,0 100%); */
 }
 
@@ -34,9 +36,26 @@ section {
     object-fit: cover;
     justify-self: start;
 }
+
 #burger-menu {
-    display:none;
-    margin: 0px;
+    display: none;
+    margin-top: 1px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.logo {
+    overflow: visible;
+    position: fixed;
+    margin:0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo img {
+    height: 90px;
+    width: 90px;
 }
 .menu {
     color: black;
@@ -46,12 +65,10 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
-    /* margin: 0;
-    position: sticky;
-    top: 0; */
-    width: 100vw;
+    border-radius: 3px;
+    width: 80vw;
     z-index: 4;
-    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 80%, 85% 85%, 75% 100%, 25% 100%, 15% 85%, 0 80%);
+    clip-path: polygon(50% 0%, 95% 0, 100% 25%, 100% 65%, 80% 90%, 50% 100%, 20% 90%, 0 65%, 0 25%, 5% 0);
 }
 
 .menu ol, ul {
@@ -98,8 +115,9 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .profile figure {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -112,12 +130,14 @@ section {
     height: 100%;
     box-sizing: border-box;
     object-fit: cover;
-   /** max-width: 100%;*/
+    /** max-width: 100%;*/
     max-height: 300px;
-    max-width: 300px;;
+    max-width: 300px;
+    ;
     border: #022636 2px solid;
     border-image: 1px;
     border-radius: 50%;
+    z-index: 0;
 }
 
 .hero-aboutMe {
@@ -349,7 +369,7 @@ section {
     display: grid;
     grid-auto-rows: min-content;
     height: inherit;
-    gap:10px;
+    gap: 10px;
     margin-left: 8px;
     margin-top: 15px;
 }
@@ -470,18 +490,17 @@ section {
     grid-template-rows: 25px 25px 1fr;
     background-color: #95c7d5;
     color: #022636;
-    gap:2px;
+    gap: 2px;
     width: 99%;
     margin: 0;
     margin-top: -20px;
     box-sizing: border-box;
-
 }
 
-.MyInfo p ,h3 {
+.MyInfo p, h3 {
     margin: 0px;
     max-height: fit-content;
-   /**font-size: smaller;*/
+    /**font-size: smaller;*/
 }
 
 .Communication {
@@ -516,7 +535,7 @@ section {
 .Education {
     height: auto;
     display: flex;
-   /* width: 92vw;*/
+    /* width: 92vw;*/
     border: #022636 2px solid;
     justify-content: space-evenly;
     box-sizing: border-box;
@@ -553,13 +572,13 @@ section {
 .fa-bars {
     height: 40px;
     width: 40px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     position: fixed;
     z-index: 5;
-    color: #022636;
-    background-color:transparent;
-        border-radius: 5px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 5px;
 }
 
 .fas, .fab {
@@ -579,17 +598,16 @@ a:hover {
     font-style: italic;
     color: #96c7d5
 }
-section{
+
+section {
     animation-name: fadeIn;
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-delay: 1s;
 }
 
-
 .Skills:hover .percent {
     animation-name: percent-process;
     animation-duration: 1s;
     animation-delay: 0.5s;
 }
-

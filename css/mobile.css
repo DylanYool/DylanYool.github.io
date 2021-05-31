@@ -3,15 +3,25 @@
         display: grid;
         grid-template-rows: 30px min-content min-content minmax(min-content, auto);
         grid-template-areas: none;
+        grid-template-columns: 1fr;
         grid-template-areas: "header" "left" "content" "footer";
         gap: 10px 5px;
         color: #e4f5ff;
+        width: 100vw;
     }
     section {
         margin: 0px;
     }
     .menu a {
-        font-size: 22px;
+        font-size: 18px;
+        margin: 0;
+    }
+        .logo img {
+        height: 60px;
+        width: 60px;
+    }
+    .header{
+        width: auto;
     }
     #me {
         width: 100vw;
@@ -205,6 +215,18 @@
     #me {
         grid-template-columns: 1fr 1fr;
     }
+    .menu {
+        width: 80vw;
+        clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 80%, 85% 85%, 75% 100%, 25% 100%, 15% 85%, 0 80%);
+    }
+    
+    .menu ol, ul {
+        padding-inline-start: 0;
+        width: 96%;
+        margin: 2px 5px;
+        justify-content: space-evenly;
+    }
+    
     .profile {
         flex-direction: column;
         grid-column-end: 2;
@@ -417,12 +439,14 @@
         margin: 0px;
         padding: 0px;
         height: min-content;
+        justify-content: left;
     }
+
     #burger-menu {
         display: flex;
-        margin: 0px;
-        padding: 5px;
-        font-size: 25px;
+        margin-top: 1px;
+        margin-left: 25px;
+        font-size: 16px;
         height: min-content;
         position: sticky;
         z-index: 5;
